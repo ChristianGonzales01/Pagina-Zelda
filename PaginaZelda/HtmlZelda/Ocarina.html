@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSSZelda/Ocarina.css">
+    <script src="../JSZelda/ZeldaOOT.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+  
+    <div id="searchResults"></div>
+
+
+
+
+    <!-- Estilo fondo -->
+    <div class="background-container">
+        <img src="../imagenesZelda/fondoOOT.jpg" class="fondoOOT" alt="">
+    </div>
+
+    <!-- La navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button id="botonQuique" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../HtmlZelda/PaginaInicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HtmlZelda/Perfil.html">Propósito</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role of a button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Historia Zelda
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../HtmlZelda/Ocarina.html">Ocarina of Time</a></li>
+                            <li><a class="dropdown-item" href="../HtmlZelda/Majoras.html">Majoras Mask</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../HtmlZelda/Nintendo.html">Historia de Nintendo</a></li> 
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" aria-disabled="true">The legend of zelda</a>
+                        </li>
+                </ul>
+                <form class="d-flex" role="search" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+
+    
+    <!-- Primer container de info -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../imagenesZelda/ocarinawallpaper.jpg" class="ZeldaOOT" alt="...">
+            </div>
+            <div class="col-md-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          La niñes de link.
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>La niñes de link.</strong> En este capítulo, se presenta a Link, el protagonista, como un niño en el Bosque Kokiri. Link no tiene un hada, lo que lo hace único entre su gente. El Gran Árbol Deku le envía a hablar con la Princesa Zelda y le asigna la misión de detener al malvado rey Gerudo, Ganondorf, quien busca el poder de la Trifuerza.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          En busca de las Tres Piedras Espirituales
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Capitulo 2.</strong> Link, ahora con su fiel compañera, el hada Navi, se embarca en una aventura para encontrar las tres Piedras Espirituales: el Rubí Goron, la Esmeralda Zora y la Esmeralda Kokiri. Cada una de estas piedras está custodiada por una raza diferente en Hyrule. Link debe superar desafíos y mazmorras para obtenerlas.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        El despertar de los Sabios
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong> Capítulo 3:</strong> Link se encuentra con la Princesa Zelda y descubre que es una de los Sabios del Tiempo. Juntos, despiertan a los Sabios y obtienen la Espada Maestra. Sin embargo, en un enfrentamiento con Ganondorf, Link queda sellado en el Reino del Templo del Tiempo durante siete años.
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Segundo container de info -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../imagenesZelda/LinkAdulto.webp" class="ZeldaOOT" alt="...">
+            </div>
+            <div class="col-md-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Link Adulto y la Tierra de Hyrule Alterada
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Capítulo 4</strong> Link despierta como un adulto en un Hyrule devastado. Ganondorf ha conquistado el reino y busca la Trifuerza. Link debe reunir a los Sabios para detener a Ganondorf y restaurar la paz en Hyrule.
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Las Misiones de los Sabios
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Capitulo 5</strong> Link busca a los Sabios y completa las mazmorras para liberar sus poderes. Cada Sabio representa una de las razas de Hyrule y otorga a Link la capacidad de sellar a Ganondorf en el Reino Sagrado.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          La Batalla Final
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Capítulo 6</strong> Link se enfrenta a Ganondorf en el Castillo de Ganon. Después de una intensa batalla, finalmente derrota a Ganondorf, quien se transforma en Ganon, una criatura monstruosa. Link debe luchar contra Ganon para proteger a Hyrule y a la Princesa Zelda.
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  Tercer container de info -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../imagenesZelda/LinkCalaca.jpg" class="ZeldaOOT" alt="...">
+            </div>
+            <div class="col-md-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Datos Curiosos del Juego
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Capítulo 7</strong>"Ocarina of Time" fue el primer juego de la serie "The Legend of Zelda" en 3D.
+                          El juego originalmente estaba destinado a ser lanzado para la Nintendo 64DD, una extensión del sistema Nintendo 64, pero finalmente se lanzó en cartucho.
+                          La ocarina en el juego es un elemento central y permite a los jugadores tocar canciones que afectan la jugabilidad y la historia.
+                          "Ocarina of Time" ha sido ampliamente elogiado por su diseño de mazmorras, su música y su influencia duradera en la industria de los videojuegos.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Ocarina de Tiempo Invertido
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Capitulo 8</strong> Existe una versión no oficial del juego conocida como "The Legend of Zelda: Ocarina of Time - Master Quest". Esta versión se lanzó como parte de un disco promocional y presenta un diseño de mazmorras más desafiante. Los rompecabezas y enemigos en esta versión son considerablemente más difíciles.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Influencia en Juegos Posteriores
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Capítulo 9</strong> "Ocarina of Time" ha tenido una influencia significativa en la industria de los videojuegos. El concepto de viajar en el tiempo y su uso en la resolución de acertijos ha sido adoptado por otros juegos, como "Dark Souls", "The Elder Scrolls V: Skyrim" y "Darksiders".
+                          La mecánica de apuntar y disparar con el arco en primera persona, introducida en "Ocarina of Time", se convirtió en un estándar en los juegos de aventuras y disparos en tercera persona, influyendo en títulos como "The Legend of Zelda: Twilight Princess" y "The Legend of Zelda: Breath of the Wild".
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+

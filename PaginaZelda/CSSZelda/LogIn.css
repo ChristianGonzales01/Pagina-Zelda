@@ -1,0 +1,84 @@
+body {
+    background-color: black !important;
+    color: white !important;
+    text-align: center !important;
+    font-family: Arial, sans-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+h1 {
+    font-size: 36px !important; /* Aumentar el tamaño en un 50% */
+    margin-top: 30px !important; /* Aumentar el margen */
+}
+
+form {
+    margin: 30px !important; /* Aumentar el margen */
+}
+
+label {
+    display: block !important;
+    margin-bottom: 15px !important; /* Aumentar el margen */
+    color: white !important;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100% !important;
+    padding: 15px !important; /* Aumentar el padding */
+    margin-bottom: 22.5px !important; /* Aumentar el margen */
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+button#loginButton {
+    background-color: yellow !important;
+    color: black !important;
+    padding: 15px 30px !important; /* Aumentar el padding */
+    border: none !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    margin-top: 30px !important; /* Aumentar el margen */
+}
+
+button#loginButton:hover {
+    background-color: #FFD700 !important;
+}
+
+button#registerButton {
+    background-color: yellow !important;
+    color: black !important;
+    padding: 15px 30px !important; /* Aumentar el padding */
+    border: none !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    margin-top: 30px !important; /* Aumentar el margen */
+}
+
+button#registerButton:hover {
+    background-color: black !important;
+}
+
+.error {
+    color: red !important;
+    font-size: 21px !important; /* Aumentar el tamaño en un 50% */
+    margin-top: 7.5px !important; /* Aumentar el margen */
+}
+
+/* Estilo para .background-container */
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('../imagenesZelda/buena.jpg'); 
+    background-size: cover;
+    filter: blur(10px); 
+}

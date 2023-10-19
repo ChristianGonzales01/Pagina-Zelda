@@ -1,0 +1,164 @@
+
+  
+/* Ajustes para que el carrusel no cubra el texto */
+.carousel-item {
+    position: relative;
+}
+
+.carousel-inner {
+    height: auto;
+}
+
+
+
+.carousel-caption.minimalist-text h1,
+.carousel-caption.minimalist-text pre {
+    margin: 0;
+    font-size: 60px; /* Aumenta el tamaño del texto */
+}
+
+
+
+/* Estilo para la barra de navegación */
+.navbar {
+    
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    background-color: black !important;
+    opacity: 0.6;
+}
+
+
+/* Estilo para las imágenes dentro del carrusel */
+.carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    background-size: 100%;
+    filter: blur(5px); 
+  }
+  
+
+.navbar-nav .nav-link {
+    color: white; 
+  }
+  
+  /* Cambiar el color del texto cuando se pasa el mouse sobre los enlaces */
+  .navbar-nav .nav-link:hover {
+    color: yellow; 
+    transition: color 0.5s;
+  }
+
+
+  .navbar-brand {
+    color: white; 
+  }
+  
+
+  .navbar-brand:hover {
+    color: yellow; 
+    transition: color 0.5s;
+  }
+
+
+  
+
+
+  /* Cambiar el color del texto "Home" cuando se pasa el mouse por encima */
+
+.navbar .nav-link[aria-current="page"]:hover {
+    color: yellow !important;
+    transition: color 0.5s;
+  }
+  
+
+
+  @font-face {
+    font-family: 'The Wild Breath of Zelda';
+    src: url('The Wild Breath of Zelda.otf') format('opentype');
+  }
+  
+
+  .titulo {
+    font-family: 'The Wild Breath of Zelda', sans-serif; /* Usar la fuente personalizada */
+    /*estilos*/
+    font-size: 1300%;
+    color: white;
+    white-space: normal;
+    overflow: hidden;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  
+  .titulo.active {
+    animation: appear 2s ease-in-out forwards;
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  /* Estilos para la superposición */
+/* Estilos iniciales */
+.superposicion {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+   
+  }
+  
+  /* Estilos para el título dentro de .superposicion */
+  .superposicion .titulo {
+    color: white;
+    transition: color 2s; /* transición */
+  }
+  
+  /* Agregar efecto hover solo al texto dentro de .superposicion */
+  .superposicion:hover .titulo {
+    color: #DAA520; 
+    transition: color 1s;
+  }
+  
+
+
+  .contenido{
+    max-width: 100%;
+    max-height: 100vh;
+  }
+
+  .superposicion:hover{
+
+    color: green;
+  }
+
+  .btn:hover{
+    color: yellow !important;
+    transition: color 0.5s;
+    background-color: #DAA520;
+
+  }
+
+  .btn{
+    background-color: #DAA520;
+    color: black;
+  }

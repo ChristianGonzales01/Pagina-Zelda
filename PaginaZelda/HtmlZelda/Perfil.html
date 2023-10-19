@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSSZelda/Perfil.css">
+    <script src="../JSZelda/Botones.js"></script>
+</head>
+<body>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary button-bajar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Creditos
+  </button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Chrisrian Enrique González Marquez</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Este proyecto fue realizado para la Universidad Autonoma de Aguascalientes
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- La nabvar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <button id="botonQuique" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../HtmlZelda/PaginaInicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../HtmlZelda/Perfil.html">Propósito</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role of a button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Historia Zelda
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../HtmlZelda/Ocarina.html">Ocarina of Time</a></li>
+                        <li><a class="dropdown-item" href="../HtmlZelda/Majoras.html">Majoras Mask</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../HtmlZelda/Nintendo.html">Historia de Nintendo</a></li> 
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">The legend of zelda</a>
+                  </li>
+            </ul>
+            <form class="d-flex" role="search" id="searchForm">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- Titulo del proyecto -->
+<h1 class="Titulo">Proyecto Zelda</h1>
+<img src="../imagenesZelda/quique.jpg" class="rounded mx-auto d-block perfil-image" alt="...">
+<p class="Cabeza">Proposito</p>
+<p class="text-break">Este proyecto, hecho por mí, Christian Enrique González Márquez, busca ayudar a las personas que deseen conocer más sobre Zelda, además de contribuir al desarrollo de mis conocimientos en HTML. Soy fan de The Legend of Zelda desde que tengo memoria, y esto me entusiasma mucho, ya que me permite combinar mis pasatiempos con mi trabajo.
+
+<!-- Pie de pagina con info personal -->
+<div class="footer">
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Redes Sociales</h5>
+                    <p class="card-text">Dudas o sugerencuas favor de contactar por aquí.</p>
+                    <a href="https://www.facebook.com/quique.pudin/" class="btn btn-primary">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Referencias</h5>
+                    <p class="card-text">Referencias e informacion extra.</p>
+                    <a href="https://zelda-archive.fandom.com/wiki/Zeldapedia" class="btn btn-primary">Zeldapedia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+/* styles.css */
+.perfil-image {
+    width: 350px; /* Ancho */
+    height: 350px; /* Alto */
+    margin: 20px auto 50px auto;
+    border-radius: 50% !important; /* Hace que la imagen sea circular */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+
+   }
+/* Clase para centrar el footer */
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black; /* Fondo negro para el footer */
+    color: yellow;
+    border: 2px solid yellow;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.text-break {
+  white-space: normal;
+  overflow: hidden;
+  width: 30%;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+  font-size: 23px;
+  opacity: 1; /* Inicialmente totalmente visible */
+  transform: translateY(20px);
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.text-break.active {
+  opacity: 1; /* Desaparece al activar la clase */
+  transform: translateY(0.5px); 
+}
+
+
+
+/* Cambia el fondo de las tarjetas a negro */
+.card {
+    background-color: black;
+    color: white; /* Texto en blanco para contrastar con el fondo negro */
+}
+
+.Titulo {
+color: white;
+font-size: 600%;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+margin-top: 0px;
+margin: 1px auto 20px auto;
+white-space: normal;
+overflow: hidden;
+-webkit-hyphens: auto;
+-ms-hyphens: auto;
+hyphens: auto;
+opacity: 0;
+transform: translateY(40px);
+}
+
+.Titulo.active {
+animation: appear 2s ease-in-out forwards;
+}
+
+@keyframes appear {
+from {
+  opacity: 0;
+  transform: translateY(40px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+}
+
+  .Cabeza {
+    color: white;
+    font-size: 200%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:lighter; /* Hace que las letras se vean más delgadas */
+    margin: 0px auto 20px auto;
+    white-space: normal;
+    overflow: hidden;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  
+  .Cabeza.active {
+    animation: appear 2s ease-in-out forwards;
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    background-color: black !important;
+    opacity: 0.6;
+
+}
+
+/*estilizar la navbar */
+
+
+.navbar-nav .nav-link {
+    color: white; 
+  }
+  
+  /* Cambiar el color del texto cuando se pasa el mouse sobre los enlaces */
+  .navbar-nav .nav-link:hover {
+    color: yellow; 
+    transition: color 0.5s;
+  }
+
+
+  .navbar-brand {
+    color: white;
+  }
+  
+
+  .navbar-brand:hover {
+    color: yellow; 
+    transition: color 0.5s;
+  }
+
+
+  
+
+
+  /* Cambiar el color del texto "Home" cuando se pasa el mouse por encima */
+
+.navbar .nav-link[aria-current="page"]:hover {
+    color: yellow !important;
+    transition: color 0.5s;
+  }
+
+
+
+  .button-bajar {
+    margin-top:  60px; /* 4 cm en píxeles  */
+    margin-bottom: 0px;
+
+  }
+  

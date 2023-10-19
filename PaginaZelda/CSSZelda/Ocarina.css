@@ -1,0 +1,130 @@
+/* Estilo para .ZeldaOOT */
+.ZeldaOOT {
+    width: 350px !important; /* Ancho */
+    height: 350px !important; /* Alto */
+    margin: 60px auto 80px auto !important;
+    border-radius: 5% !important; /* Hace que la imagen sea circular */
+    color: yellow !important;
+    border: 5px solid yellow !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+/* Estilo para .navbar */
+.navbar {
+    position: absolute !important;
+    width: 100% !important;
+    z-index: 100 !important;
+    background-color: black !important;
+    opacity: 0.6 !important;
+}
+
+/* Resto del código para estilizar la navbar */
+
+/* Estilo para .navbar-nav .nav-link */
+.navbar-nav .nav-link {
+    color: white !important; 
+}
+
+/* Cambiar el color del texto cuando se pasa el mouse sobre los enlaces */
+.navbar-nav .nav-link:hover {
+    color: yellow !important; 
+    transition: color 0.5s !important;
+}
+
+/* Estilo para .navbar-brand */
+.navbar-brand {
+    color: white !important;
+}
+
+/* Estilo para .navbar-brand al pasar el mouse */
+.navbar-brand:hover {
+    color: yellow !important; 
+    transition: color 0.5s !important;
+}
+
+/* Cambiar el color del texto "Home" cuando se pasa el mouse por encima */
+.navbar .nav-link[aria-current="page"]:hover {
+    color: yellow !important;
+    transition: color 0.5s !important;
+}
+
+/* Estilo para .accordion */
+.accordion {
+    margin: 65px auto 80px auto !important;
+    color: white !important;
+    border: 2px solid yellow !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    background-color: black !important;
+    border-radius: 10px !important; /* Establece bordes redondeados */
+}
+
+/* Estilo para .accordion-button */
+.accordion-button {
+    background-color: black !important;
+    color: white !important;
+    border: 2px solid yellow !important;
+    border-radius: 10px !important; /* Establece bordes redondeados */
+    cursor: pointer !important;
+    transition: background-color 0.3s, color 0.3s !important;
+}
+
+/* Estilo para .accordion-button al pasar el mouse */
+.accordion-button:hover {
+    background-color: yellow !important;
+    color: black !important;
+}
+
+/* Estilo para .accordion-button cuando tiene el foco */
+.accordion-button:focus {
+    background-color: yellow !important;
+    color: black !important;
+}
+
+/* Estilo para .accordion-body */
+.accordion-body {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 10px !important; /* Establece bordes redondeados */
+}
+
+/* Estilo para .accordion-collapse */
+.accordion-collapse {
+    background-color: black !important;
+    border-radius: 10px !important; /* Establece bordes redondeados */
+}
+
+/* Estilo para body */
+body {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background-color: black !important;
+}
+
+/* Estilo para .background-container */
+.background-container {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -1 !important; /* Coloca el fondo detrás de otros elementos */
+    opacity: 100;
+}
+
+
+/* Estilo para la imagen de fondo */
+.fondoOOT {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Escala la imagen para cubrir todo el contenedor */
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(10px);
+}
+
+
+
+

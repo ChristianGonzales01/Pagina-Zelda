@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../JSZelda/Botones.js"></script>
+    <link rel="stylesheet" href="../CSSZelda/diseñoInicio.css">
+    
+   
+
+   
+</head>
+
+
+<body>
+
+<!-- Titulo en grande -->
+
+  <div class="superposicion" id="Titulo">
+    <h1 class="titulo">THE LEGEND OF ZELDA</h1>
+  </div>
+  
+<!-- La navbar principal -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button id="botonQuique" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                
+                <a class="nav-link" aria-current="page" href="../HtmlZelda/PaginaInicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../HtmlZelda/Perfil.html">Propósito</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Historias Zelda
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../HtmlZelda/Ocarina.html">Ocarina of Time</a></li>
+                  <li><a class="dropdown-item" href="../HtmlZelda/Majoras.html">Majoras Mask</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../HtmlZelda/Nintendo.html">Historia de Nintendo</a></li> 
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">The legend of zelda</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+
+<!-- Carrusel de fotos para poder cambiar de fotos -->
+      <div class="carousel-container">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active contenido">
+              <img src="../imagenesZelda/buena.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item contenido">
+              <img src="../imagenesZelda/1610196.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item contenido">
+              <img src="../imagenesZelda/2912166.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item contenido">
+              <img src="../imagenesZelda/wallpaperbetter.com_1366x768.jpg" class="d-block w-100" alt="Slide 4">
+            </div>
+            <div class="carousel-item contenido">
+              <img src="../imagenesZelda/wallpaperbetter.com_1920x1080 (2).jpg " class="d-block w-100" alt="Slide 5">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+      
+      
+</body>
+</html>
